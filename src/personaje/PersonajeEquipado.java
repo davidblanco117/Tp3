@@ -1,7 +1,5 @@
 package personaje;
 
-import ItemDecorator.ItemDecorator;
-
 public interface PersonajeEquipado {
 
 	//public abstract void equipar(ItemDecorator it);

@@ -1,15 +1,26 @@
 package personaje;
 
-import ItemDecorator.ItemDecorator;
+
 
 public class Soldado extends Personaje{
 
-	private int salud=200;
-	private int daño=20;
-	private int distanciaMinima=0;
-	private int distanciaMaxima=0;
-	private int energia=100;
+
+	private final float SALUD=200;
+	private final int CANTFLECHAS=0;
+	private final float DAÑO=10;
+	private final int DISTANCIAMINIMA=0;
+	private final int DISTANCIAMAXIMA=0;
+	private final float ENERGIA=10;
 	
+	public Soldado() {
+		this.salud=SALUD;
+		this.canFlechas=CANTFLECHAS;
+		this.daño=DAÑO;
+		this.distanciaMinima=DISTANCIAMINIMA;
+		this.distanciaMaxima=DISTANCIAMAXIMA;
+		this.energia=ENERGIA;
+		
+	}
 	public void atacar(){
 		
 		

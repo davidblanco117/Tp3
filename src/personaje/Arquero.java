@@ -1,7 +1,5 @@
 package personaje;
 
-import ItemDecorator.ItemDecorator;
-
 public class Arquero extends Personaje {
 
 	
@@ -32,19 +30,9 @@ public class Arquero extends Personaje {
 
 		
 	}
-	public Arquero(int salud, int daño, int canFlechas, int distanciaMinima, int distanciaMaxima, int energia) {
-		this.salud=salud;
-		this.canFlechas=canFlechas;
-		this.daño=daño;
-		this.distanciaMinima=distanciaMinima;
-		this.distanciaMaxima=distanciaMaxima;
-		this.energia=energia;
-		
-	}
+
 	
-	
-	
-	
+
 	
 	
 	public void atacar(){

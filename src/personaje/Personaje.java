@@ -32,12 +32,10 @@ public abstract class Personaje implements PersonajeEquipado {
 
 	public void equipar(ItemDecorator item) {
 
-		for (ItemDecorator itemDeco : items) {
-			if (itemDeco.getCodigoDeItem() == item.getCodigoDeItem()) {
+		for (ItemDecorator itemDeco : items) 
+			if (itemDeco.getCodigoDeItem() == item.getCodigoDeItem()) 
 				return;
-			}
-		}
-
+			
 		item = item.evaluarMejora(this);
 		items.add(item);
 
