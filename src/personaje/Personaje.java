@@ -72,9 +72,10 @@ public abstract class Personaje implements PersonajeEquipado {
 		return canFlechas;
 	}
 
-	public abstract void atacar();
-
-	public abstract void serAtacado();
+	public abstract void atacar(Personaje p);
+	
+	public abstract void serAtacado(float daño);
+	
 	// public abstract PersonajeEquipado equipar(ItemDecorator item);
 
 }

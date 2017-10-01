@@ -23,25 +23,31 @@ public class Caballero extends Personaje{
 		this.cantDeAtaques=0;
 	}
 	
+	public void beberAgua() {
+		estado.beberAgua();
+		this.cantDeAtaques=0;
+	}
 	
-	
-	public void recibirDaño(int d){
-		this.salud-=d;
+
+	public void serAtacado(float daño) {
+		this.salud-=daño;
+		
 	}
 
-	public void atacar(){
-		
-		
-		
-		
-		
-		
-	}
+
+
 	@Override
-	public void serAtacado() {
-		// TODO Auto-generated method stub
-		
+	public void atacar(Personaje p) {
+		estado.atacar(p,this.daño);
+		this.cantDeAtaques++;
+		if(this.cantDeAtaques==3) {
+			this.estado=new Rebelde();
+		}
 	}
+
+
+
+	
 	
 	
 

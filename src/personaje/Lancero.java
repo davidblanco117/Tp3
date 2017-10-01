@@ -19,17 +19,23 @@ public class Lancero extends Personaje{
 		this.energia=ENERGIA;
 		
 	}
+
+	@Override
+	public void atacar(Personaje p) {
+		//Falta verificar la distancia
+		p.serAtacado(this.daño);
+		
+	}
+
+	@Override
+	public void serAtacado(float daño) {
+		//Falta verificar la defensa y si la salud llega a 0
+		this.salud-=daño;
+		
+	}
 	
-	@Override
-	public void atacar() {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void serAtacado() {
-		// TODO Auto-generated method stub
-		
-	}
+	
+	
 	
 	
 

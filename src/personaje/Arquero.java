@@ -35,11 +35,15 @@ public class Arquero extends Personaje {
 
 	
 	
-	public void atacar(){
+	public void atacar(Personaje p){
 		
+		if(this.canFlechas==0)
+			return;
+		this.canFlechas--;
 		
-		//Cuando realice el ataque debe verificar la cantidad de flechas y la distancia
+		//Falta verificar la distancia y tener en cuenta la defensa
 		
+		p.serAtacado(this.daño);
 		
 		
 		
@@ -48,9 +52,9 @@ public class Arquero extends Personaje {
 
 
 
-	@Override
-	public void serAtacado() {
-		// TODO Auto-generated method stub
+	public void serAtacado(float daño) {
+		
+		this.salud-=daño;
 		
 	}
 	

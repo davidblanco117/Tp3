@@ -6,4 +6,10 @@ public class Rebelde extends EstadoCaballero {
 		return new Normal();
 	}
 
+	@Override
+	public void atacar(Personaje p, float daño) {
+		return;
+		
+	}
+
 }

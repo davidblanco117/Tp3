@@ -21,19 +21,19 @@ public class Soldado extends Personaje{
 		this.energia=ENERGIA;
 		
 	}
-	public void atacar(){
-		
-		
-		
-		
-		
+	
+	@Override
+	public void serAtacado(float daño) {
+		this.salud-=daño;
 		
 	}
-
 	@Override
-	public void serAtacado() {
-		// TODO Auto-generated method stub
-		
+	public void atacar(Personaje p) {
+		if(this.energia<10)
+			return;
+		//Falta verificar la distancia y tener en cuenta la defensa
+		this.energia-=10;
+		p.serAtacado(this.daño);
 	}
 
 	
