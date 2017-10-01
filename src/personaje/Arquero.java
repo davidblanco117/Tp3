@@ -1,13 +1,51 @@
 package personaje;
 
-public class Arquero {
+import ItemDecorator.ItemDecorator;
+
+public class Arquero extends Personaje {
 
 	
-	private int salud=50;
-	private int daño=5;
-	private int distanciaMinima=2;
-	private int distanciaMaxima=5;
-	private int cantidadDeFlechas=20;
+	private final float SALUD=50;
+	private final int CANTFLECHAS=20;
+	private final float DAÑO=5;
+	private final int DISTANCIAMINIMA=2;
+	private final int DISTANCIAMAXIMA=5;
+	private final float ENERGIA=0;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public Arquero() {
+		this.salud=SALUD;
+		this.canFlechas=CANTFLECHAS;
+		this.daño=DAÑO;
+		this.distanciaMinima=DISTANCIAMINIMA;
+		this.distanciaMaxima=DISTANCIAMAXIMA;
+		this.energia=ENERGIA;
+		
+
+		
+	}
+	public Arquero(int salud, int daño, int canFlechas, int distanciaMinima, int distanciaMaxima, int energia) {
+		this.salud=salud;
+		this.canFlechas=canFlechas;
+		this.daño=daño;
+		this.distanciaMinima=distanciaMinima;
+		this.distanciaMaxima=distanciaMaxima;
+		this.energia=energia;
+		
+	}
+	
+	
+	
+	
+	
 	
 	public void atacar(){
 		
@@ -16,6 +54,15 @@ public class Arquero {
 		
 		
 		
+		
+	}
+
+
+
+
+	@Override
+	public void serAtacado() {
+		// TODO Auto-generated method stub
 		
 	}
 	

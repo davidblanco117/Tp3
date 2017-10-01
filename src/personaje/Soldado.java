@@ -1,5 +1,7 @@
 package personaje;
 
+import ItemDecorator.ItemDecorator;
+
 public class Soldado extends Personaje{
 
 	private int salud=200;
@@ -16,6 +18,13 @@ public class Soldado extends Personaje{
 		
 		
 	}
+
+	@Override
+	public void serAtacado() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 	
 }
