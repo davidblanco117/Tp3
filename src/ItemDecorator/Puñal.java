@@ -2,27 +2,26 @@ package ItemDecorator;
 
 import personaje.PersonajeEquipado;
 
-public class Capa extends ItemDecorator {
+public class Puñal extends ItemDecorator{
 	
 	
 	
-	
-	public Capa() {
-		this.codigoDeItem=111;
+	public Puñal() {
+		this.codigoDeItem=222;
 	}
 
-	public Capa(PersonajeEquipado personaje) {
-		this.codigoDeItem=111;
-		this.agregarDaño=personaje.getDaño()/10*-1;
-		this.agregarEnergia=personaje.getEnergia();
+	public Puñal(PersonajeEquipado personaje) {
+		this.codigoDeItem=222;
+		this.agregarDaño=3;
+		this.agregarSalud=-3;
 	}
 	
 	
 	
 	public ItemDecorator evaluarMejora(PersonajeEquipado personaje) {
 		
-		Capa capa=new Capa(personaje);
-		return capa;
+		Puñal puñal=new Puñal(personaje);
+		return puñal;
 	}
 
 	@Override
@@ -70,8 +69,5 @@ public class Capa extends ItemDecorator {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
-
-	
 
 }

@@ -13,7 +13,8 @@ public abstract class ItemDecorator implements PersonajeEquipado{
 	protected int agregarDistanciaMinima=0;
 	protected float agregarDaño=0;
 	protected int agregarCantidadFlechas=0;
-
+	//protected float agregarDefensa=0;
+	
 	protected int codigoDeItem =0;
 	public int getCodigoDeItem() {
 		return this.codigoDeItem;
