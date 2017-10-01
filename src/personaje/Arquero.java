@@ -34,7 +34,12 @@ public class Arquero extends Personaje {
 	}
 
 	
-
+	public void recibirPaqueteDeFlechas() {
+		if(!vivo)
+			return;
+		this.canFlechas+=6;
+	}
+	
 	
 	
 	public void atacar(Personaje p){
