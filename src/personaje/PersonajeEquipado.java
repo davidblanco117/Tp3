@@ -2,7 +2,7 @@ package personaje;
 
 public interface PersonajeEquipado {
 
-	//public abstract void equipar(ItemDecorator it);
+
 	
 	public abstract float getDaño();
 	public abstract float getSalud();

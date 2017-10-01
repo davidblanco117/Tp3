@@ -10,8 +10,10 @@ public class Soldado extends Personaje{
 	private final float DAÑO=10;
 	private final int DISTANCIAMINIMA=0;
 	private final int DISTANCIAMAXIMA=0;
-	private final float ENERGIA=10;
-	
+	private final float ENERGIA=100;
+	private final float DEFENSA=0;
+	private final float PORCENTAJEDEDAÑORECIBIDO=0;
+	private final boolean VIVO=true;
 	public Soldado() {
 		this.salud=SALUD;
 		this.canFlechas=CANTFLECHAS;
@@ -19,19 +21,17 @@ public class Soldado extends Personaje{
 		this.distanciaMinima=DISTANCIAMINIMA;
 		this.distanciaMaxima=DISTANCIAMAXIMA;
 		this.energia=ENERGIA;
-		
+		this.defensa=DEFENSA;
+		this.porcentajeDeDañoRecibido=PORCENTAJEDEDAÑORECIBIDO;
+		this.vivo=VIVO;
 	}
 	
-	@Override
-	public void serAtacado(float daño) {
-		this.salud-=daño;
-		
-	}
+
 	@Override
 	public void atacar(Personaje p) {
-		if(this.energia<10)
+		if(this.energia<10|| !vivo)
 			return;
-		//Falta verificar la distancia y tener en cuenta la defensa
+		//Falta verificar la distancia
 		this.energia-=10;
 		p.serAtacado(this.daño);
 	}

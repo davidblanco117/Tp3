@@ -12,6 +12,7 @@ public class Escudo extends ItemDecorator{
 
 	public Escudo(PersonajeEquipado personaje) {
 		this.codigoDeItem=333;
+		this.porcentajeDeDañoRecibido=(float)0.4;
 
 	}
 	

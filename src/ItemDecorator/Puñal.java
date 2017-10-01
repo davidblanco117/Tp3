@@ -13,7 +13,7 @@ public class Puñal extends ItemDecorator{
 	public Puñal(PersonajeEquipado personaje) {
 		this.codigoDeItem=222;
 		this.agregarDaño=3;
-		this.agregarSalud=-3;
+		this.agregarDefensa=-3;
 	}
 	
 	
