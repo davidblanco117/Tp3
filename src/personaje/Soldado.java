@@ -12,7 +12,7 @@ public class Soldado extends Personaje{
 	private final int DISTANCIAMAXIMA=0;
 	private final float ENERGIA=100;
 	private final float DEFENSA=0;
-	private final float PORCENTAJEDEDAÑORECIBIDO=0;
+	private final float PORCENTAJEDEDAÑORECIBIDO=1;
 	private final boolean VIVO=true;
 	public Soldado() {
 		this.salud=SALUD;
@@ -36,6 +36,8 @@ public class Soldado extends Personaje{
 		p.serAtacado(this.daño);
 	}
 
-	
+	public void beberAgua() {
+		this.energia=100;
+	}
 	
 }

@@ -91,6 +91,14 @@ public abstract class Personaje implements PersonajeEquipado {
 		return vivo;
 	}
 
+	public void beberAgua() {
+		
+	}
+	
+	
+	
+	
+	
 	public abstract void atacar(Personaje p);
 	
 	//public abstract void serAtacado(float daño);

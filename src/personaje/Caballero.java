@@ -33,7 +33,7 @@ public class Caballero extends Personaje{
 	public void beberAgua() {
 		if(!vivo)
 			return;
-		estado.beberAgua();
+		estado=estado.beberAgua();
 		this.cantDeAtaques=0;
 	}
 	
